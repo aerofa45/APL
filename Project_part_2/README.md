@@ -84,39 +84,7 @@ python generate_outputs.py
 
 Only Python's standard library is required.
 
-Include an AI Use Statement as required by your project assignment.
-
-You may use the following format:
-
-### AI USE STATEMENT
-
-**AI Tool(s) Used:**
-
----
-
-**How did your group use AI for this project milestone?**
-
----
-
----
-
-**Which project components received AI assistance?**
-
----
-
----
-
-**Describe at least one AI-generated suggestion, explanation, or code segment that your group modified, corrected, rejected, or improved.**
-
----
-
----
-
-**How did your group test or independently verify AI-assisted work?**
-
----
-
----
+I
 
 **What did your group learn from using AI during this milestone?**
 
