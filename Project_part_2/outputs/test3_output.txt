@@ -1,0 +1,6 @@
+PRINT('print') at line 1, column 1
+LEFT_PAREN('(') at line 1, column 6
+IDENTIFIER('result') at line 1, column 7
+RIGHT_PAREN(')') at line 1, column 13
+SEMICOLON(';') at line 1, column 14
+EOF at line 2, column 1

@@ -1,0 +1,11 @@
+LET('let') at line 1, column 1
+IDENTIFIER('age') at line 1, column 5
+ASSIGN('=') at line 1, column 9
+INTEGER('21') at line 1, column 11
+SEMICOLON(';') at line 1, column 13
+LET('let') at line 2, column 1
+IDENTIFIER('temperature') at line 2, column 5
+ASSIGN('=') at line 2, column 17
+DECIMAL('98.6') at line 2, column 19
+SEMICOLON(';') at line 2, column 23
+EOF at line 3, column 1
