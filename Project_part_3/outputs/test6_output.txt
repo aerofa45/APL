@@ -1,0 +1,57 @@
+ProgramNode
+  statements[0]: DeclarationNode name='scores'
+    value: ArrayNode
+      elements[0]: NumberNode value=90
+      elements[1]: NumberNode value=85
+      elements[2]: NumberNode value=100
+  statements[1]: DeclarationNode name='empty'
+    value: ArrayNode elements=[]
+  statements[2]: AssignmentNode
+    target: IndexNode name='scores'
+      index: NumberNode value=1
+    value: NumberNode value=100
+  statements[3]: AssignmentNode
+    target: IndexNode name='scores'
+      index: BinaryOpNode operator='-'
+        left: IndexNode name='scores'
+          index: NumberNode value=0
+        right: NumberNode value=89
+    value: BinaryOpNode operator='+'
+      left: IndexNode name='scores'
+        index: NumberNode value=2
+      right: NumberNode value=1.5
+  statements[4]: DeclarationNode name='first'
+    value: IndexNode name='scores'
+      index: NumberNode value=0
+  statements[5]: PrintNode
+    value: VariableNode name='first'
+  statements[6]: FunctionNode name='total' parameters=['values']
+    body: BlockNode
+      statements[0]: DeclarationNode name='sum'
+        value: NumberNode value=0
+      statements[1]: ForNode
+        init: DeclarationNode name='i'
+          value: NumberNode value=0
+        condition: BinaryOpNode operator='<'
+          left: VariableNode name='i'
+          right: NumberNode value=3
+        update: AssignmentNode
+          target: VariableNode name='i'
+          value: BinaryOpNode operator='+'
+            left: VariableNode name='i'
+            right: NumberNode value=1
+        body: BlockNode
+          statements[0]: AssignmentNode
+            target: VariableNode name='sum'
+            value: BinaryOpNode operator='+'
+              left: VariableNode name='sum'
+              right: IndexNode name='values'
+                index: VariableNode name='i'
+      statements[2]: ReturnNode
+        value: VariableNode name='sum'
+  statements[7]: PrintNode
+    value: CallNode name='total'
+      arguments[0]: ArrayNode
+        elements[0]: NumberNode value=1
+        elements[1]: NumberNode value=2
+        elements[2]: NumberNode value=3

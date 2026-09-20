@@ -1,0 +1,42 @@
+ProgramNode
+  statements[0]: DeclarationNode name='x'
+    value: NumberNode value=10
+  statements[1]: DeclarationNode name='y'
+    value: NumberNode value=20
+  statements[2]: DeclarationNode name='ratio'
+    value: NumberNode value=3.5
+  statements[3]: DeclarationNode name='sum'
+    value: BinaryOpNode operator='*'
+      left: BinaryOpNode operator='+'
+        left: VariableNode name='x'
+        right: VariableNode name='y'
+      right: NumberNode value=2
+  statements[4]: AssignmentNode
+    target: VariableNode name='x'
+    value: BinaryOpNode operator='+'
+      left: VariableNode name='x'
+      right: NumberNode value=1
+  statements[5]: DeclarationNode name='flag'
+    value: BinaryOpNode operator='or'
+      left: BinaryOpNode operator='and'
+        left: UnaryOpNode operator='not'
+          operand: BinaryOpNode operator='>'
+            left: VariableNode name='x'
+            right: VariableNode name='y'
+        right: BooleanNode value=True
+      right: BooleanNode value=False
+  statements[6]: DeclarationNode name='neg'
+    value: BinaryOpNode operator='-'
+      left: BinaryOpNode operator='+'
+        left: UnaryOpNode operator='-'
+          operand: VariableNode name='x'
+        right: BinaryOpNode operator='*'
+          left: VariableNode name='y'
+          right: NumberNode value=2
+      right: BinaryOpNode operator='/'
+        left: NumberNode value=4
+        right: NumberNode value=2
+  statements[7]: PrintNode
+    value: VariableNode name='sum'
+  statements[8]: PrintNode
+    value: VariableNode name='neg'

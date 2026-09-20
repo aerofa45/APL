@@ -1,0 +1,48 @@
+ProgramNode
+  statements[0]: DeclarationNode name='total'
+    value: NumberNode value=0
+  statements[1]: ForNode
+    init: DeclarationNode name='i'
+      value: NumberNode value=0
+    condition: BinaryOpNode operator='<'
+      left: VariableNode name='i'
+      right: NumberNode value=5
+    update: AssignmentNode
+      target: VariableNode name='i'
+      value: BinaryOpNode operator='+'
+        left: VariableNode name='i'
+        right: NumberNode value=1
+    body: BlockNode
+      statements[0]: IfNode
+        condition: BinaryOpNode operator='and'
+          left: BinaryOpNode operator='!='
+            left: VariableNode name='i'
+            right: NumberNode value=2
+          right: BinaryOpNode operator='<='
+            left: VariableNode name='i'
+            right: NumberNode value=3
+        then_branch: BlockNode
+          statements[0]: AssignmentNode
+            target: VariableNode name='total'
+            value: BinaryOpNode operator='+'
+              left: VariableNode name='total'
+              right: VariableNode name='i'
+  statements[2]: PrintNode
+    value: VariableNode name='total'
+  statements[3]: DeclarationNode name='j'
+    value: NumberNode value=0
+  statements[4]: ForNode
+    init: AssignmentNode
+      target: VariableNode name='j'
+      value: NumberNode value=10
+    condition: BinaryOpNode operator='>='
+      left: VariableNode name='j'
+      right: NumberNode value=0
+    update: AssignmentNode
+      target: VariableNode name='j'
+      value: BinaryOpNode operator='-'
+        left: VariableNode name='j'
+        right: NumberNode value=2
+    body: BlockNode
+      statements[0]: PrintNode
+        value: VariableNode name='j'

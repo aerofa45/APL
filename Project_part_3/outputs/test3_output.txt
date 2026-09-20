@@ -1,0 +1,36 @@
+ProgramNode
+  statements[0]: DeclarationNode name='a'
+    value: NumberNode value=15
+  statements[1]: DeclarationNode name='b'
+    value: NumberNode value=7
+  statements[2]: IfNode
+    condition: BinaryOpNode operator='>'
+      left: VariableNode name='a'
+      right: VariableNode name='b'
+    then_branch: BlockNode
+      statements[0]: PrintNode
+        value: VariableNode name='a'
+    else_branch: BlockNode
+      statements[0]: PrintNode
+        value: VariableNode name='b'
+  statements[3]: DeclarationNode name='i'
+    value: NumberNode value=0
+  statements[4]: DeclarationNode name='total'
+    value: NumberNode value=0
+  statements[5]: WhileNode
+    condition: BinaryOpNode operator='<'
+      left: VariableNode name='i'
+      right: NumberNode value=5
+    body: BlockNode
+      statements[0]: AssignmentNode
+        target: VariableNode name='total'
+        value: BinaryOpNode operator='+'
+          left: VariableNode name='total'
+          right: VariableNode name='i'
+      statements[1]: AssignmentNode
+        target: VariableNode name='i'
+        value: BinaryOpNode operator='+'
+          left: VariableNode name='i'
+          right: NumberNode value=1
+  statements[6]: PrintNode
+    value: VariableNode name='total'

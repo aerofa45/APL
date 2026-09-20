@@ -1,0 +1,30 @@
+ProgramNode
+  statements[0]: FunctionNode name='square' parameters=['n']
+    body: BlockNode
+      statements[0]: DeclarationNode name='result'
+        value: BinaryOpNode operator='*'
+          left: VariableNode name='n'
+          right: VariableNode name='n'
+      statements[1]: ReturnNode
+        value: VariableNode name='result'
+  statements[1]: FunctionNode name='add' parameters=['a', 'b']
+    body: BlockNode
+      statements[0]: ReturnNode
+        value: BinaryOpNode operator='+'
+          left: VariableNode name='a'
+          right: VariableNode name='b'
+  statements[2]: FunctionNode name='hello' parameters=[]
+    body: BlockNode
+      statements[0]: PrintNode
+        value: NumberNode value=1
+      statements[1]: ReturnNode
+  statements[3]: DeclarationNode name='answer'
+    value: CallNode name='add'
+      arguments[0]: CallNode name='square'
+        arguments[0]: NumberNode value=3
+      arguments[1]: CallNode name='square'
+        arguments[0]: NumberNode value=4
+  statements[4]: ExpressionStatementNode
+    expression: CallNode name='hello' arguments=[]
+  statements[5]: PrintNode
+    value: VariableNode name='answer'
