@@ -2,9 +2,7 @@
 
 Claude Code (Claude Sonnet 5, Anthropic) was used to read the supplied Part 1
 Emerald language document, the Part 2 lexer and the Part 3 task description,
-generate the recursive-descent parser and AST node classes, create automated
-tests and documentation, run verification, save example outputs, and package
-the project.
+generate the plan how to solve it. Once the plan is done then we implemented it 
 
 The parser builds directly on the Part 2 lexer, which was reused without
 changes. Claude Code followed the Part 1 grammar exactly, including its
