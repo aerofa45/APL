@@ -1,0 +1,71 @@
+Statement 1 (line 2):
+let x
+  |
+  10
+
+Statement 2 (line 3):
+let y
+  |
+  20
+
+Statement 3 (line 4):
+let ratio
+    |
+   3.5
+
+Statement 4 (line 5):
+let sum
+   |
+   *
+  / \
+ /   \
+ +   2
+/ \
+x y
+
+Statement 5 (line 6):
+  =
+ / \
+/   \
+x   +
+   / \
+   x 1
+
+Statement 6 (line 7):
+      let flag
+         |
+         or
+    _____|_____
+    |         |
+   and      false
+   / \
+  /   \
+ /     \
+not   true
+ |
+ >
+/ \
+x y
+
+Statement 7 (line 8):
+   let neg
+      |
+      -
+  ____|____
+  |       |
+  +       /
+ / \     / \
+/   \    4 2
+-   *
+|  / \
+x  y 2
+
+Statement 8 (line 9):
+print
+  |
+ sum
+
+Statement 9 (line 10):
+print
+  |
+ neg

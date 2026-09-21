@@ -1,0 +1,49 @@
+Statement 1 (line 2):
+let a
+  |
+  15
+
+Statement 2 (line 3):
+let b
+  |
+  7
+
+Statement 3 (line 4):
+       if
+ ______|_______
+ |     |      |
+ >    { }    { }
+/ \    |      |
+a b  print  print
+       |      |
+       a      b
+
+Statement 4 (line 10):
+let i
+  |
+  0
+
+Statement 5 (line 11):
+let total
+    |
+    0
+
+Statement 6 (line 12):
+        while
+ _________|_________
+ |                 |
+ <                { }
+/ \          ______|______
+i 5          |           |
+             =           =
+        _____|_____     / \
+        |         |    /   \
+      total       +    i   +
+                 / \      / \
+                /   \     i 1
+              total i
+
+Statement 7 (line 16):
+print
+  |
+total

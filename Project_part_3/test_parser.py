@@ -9,6 +9,7 @@ from ast_nodes import (
     IndexNode, NumberNode, PrintNode, ProgramNode, ReturnNode, UnaryOpNode,
     VariableNode, WhileNode, format_tree,
 )
+from ast_diagram import draw, format_program_diagram
 from emerald_parser import ParseError, parse_source
 from lexer import LexerError
 
@@ -310,6 +311,76 @@ class TestExamplePrograms(unittest.TestCase):
             capture_output=True, text=True)
         self.assertEqual(result.returncode, 1)
         self.assertIn("Usage", result.stdout)
+
+
+class TestDiagram(unittest.TestCase):
+    def run_cli(self, *args):
+        return subprocess.run([sys.executable, str(ROOT / "emerald_parser.py"), *args],
+                              capture_output=True, text=True)
+
+    def test_diagram_for_2_plus_3_times_4(self):
+        self.assertEqual(draw(expr("2 + 3 * 4")), "\n".join([
+            "  +",
+            " / \\",
+            "/   \\",
+            "2   *",
+            "   / \\",
+            "   3 4",
+        ]))
+
+    def test_diagram_shows_multiplication_below_addition(self):
+        lines = draw(expr("2 + 3 * 4")).split("\n")
+        plus = next(i for i, l in enumerate(lines) if "+" in l)
+        star = next(i for i, l in enumerate(lines) if "*" in l)
+        self.assertLess(plus, star)
+
+    def test_parentheses_change_the_diagram(self):
+        lines = draw(expr("(2 + 3) * 4")).split("\n")
+        plus = next(i for i, l in enumerate(lines) if "+" in l)
+        star = next(i for i, l in enumerate(lines) if "*" in l)
+        self.assertLess(star, plus)
+
+    def test_diagram_of_a_single_leaf(self):
+        self.assertEqual(draw(num(7)), "7")
+
+    def test_too_wide_diagram_falls_back_to_the_indented_tree(self):
+        program = parse_source("let v = [" + ", ".join(f"a{i}" for i in range(40)) + "];")
+        self.assertIsNone(draw(program.statements[0]))
+        text = format_program_diagram(program)
+        self.assertIn("too wide to draw", text)
+        self.assertIn("DeclarationNode", text)
+
+    def test_program_diagram_has_one_section_per_statement(self):
+        text = format_program_diagram(parse_source("let x = 1;\nprint(x);"))
+        self.assertIn("Statement 1 (line 1):", text)
+        self.assertIn("Statement 2 (line 2):", text)
+
+    def test_every_valid_example_can_be_drawn(self):
+        for path in sorted((ROOT / "test_inputs").glob("test*.em")):
+            if "invalid" in path.name:
+                continue
+            with self.subTest(path.name):
+                result = self.run_cli(str(path), "--diagram")
+                self.assertEqual(result.returncode, 0, result.stdout)
+                self.assertIn("Statement 1", result.stdout)
+
+    def test_flag_may_come_before_the_file(self):
+        path = str(ROOT / "test_inputs" / "test1_precedence.em")
+        self.assertEqual(self.run_cli("--diagram", path).stdout,
+                         self.run_cli(path, "--diagram").stdout)
+
+    def test_diagram_flag_still_reports_errors(self):
+        result = self.run_cli(str(ROOT / "test_inputs" / "test7_invalid_missing_expression.em"),
+                              "--diagram")
+        self.assertEqual(result.returncode, 1)
+        self.assertIn("Syntax error at line 1, column 9", result.stdout)
+        result = self.run_cli("nope.em", "--diagram")
+        self.assertEqual(result.returncode, 1)
+        self.assertIn("'nope.em' was not found", result.stdout)
+
+    def test_default_output_is_still_the_indented_tree(self):
+        result = self.run_cli(str(ROOT / "test_inputs" / "test1_precedence.em"))
+        self.assertTrue(result.stdout.startswith("ProgramNode"))
 
 
 class TestTreeFormat(unittest.TestCase):

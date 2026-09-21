@@ -1,0 +1,52 @@
+Statement 1 (line 2):
+   func square(n)
+         |
+        { }
+    _____|_____
+    |         |
+let result  return
+    |         |
+    *       result
+   / \
+   n n
+
+Statement 2 (line 7):
+func add(a, b)
+      |
+     { }
+      |
+    return
+      |
+      +
+     / \
+     a b
+
+Statement 3 (line 11):
+ func hello()
+      |
+     { }
+  ____|____
+  |       |
+print   return
+  |
+  1
+
+Statement 4 (line 16):
+      let answer
+          |
+        add( )
+    ______|______
+    |           |
+square( )   square( )
+    |           |
+    3           4
+
+Statement 5 (line 17):
+  expr
+   |
+hello( )
+
+Statement 6 (line 18):
+print
+  |
+answer

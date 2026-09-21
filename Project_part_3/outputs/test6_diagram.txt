@@ -1,0 +1,76 @@
+Statement 1 (line 1):
+let scores
+    |
+   [ ]
+ ___|____
+ |  |   |
+ 90 85 100
+
+Statement 2 (line 2):
+let empty
+    |
+   [ ]
+
+Statement 3 (line 3):
+        =
+    ____|____
+    |       |
+scores[ ]  100
+    |
+    1
+
+Statement 4 (line 4):
+                =
+        ________|________
+        |               |
+    scores[ ]           +
+        |           ____|____
+        -           |       |
+    ____|____   scores[ ]  1.5
+    |       |       |
+scores[ ]   89      2
+    |
+    0
+
+Statement 5 (line 5):
+let first
+    |
+scores[ ]
+    |
+    0
+
+Statement 6 (line 6):
+print
+  |
+first
+
+Statement 7 (line 8):
+                    func total(values)
+                            |
+                           { }
+   _________________________|_________________________
+   |                   |                             |
+let sum               for                          return
+   |       ____________|____________                 |
+   0       |     |     |           |                sum
+         let i   <     =          { }
+           |    / \   / \          |
+           0    i 3  /   \         =
+                     i   +    _____|_____
+                        / \   |         |
+                        i 1  sum        +
+                                    ____|____
+                                    |       |
+                                   sum  values[ ]
+                                            |
+                                            i
+
+Statement 8 (line 15):
+ print
+   |
+total( )
+   |
+  [ ]
+  /|\
+ / | \
+ 1 2 3

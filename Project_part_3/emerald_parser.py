@@ -312,14 +312,19 @@ def parse_file(filename):
 if __name__ == "__main__":
     import sys
 
-    if len(sys.argv) != 2:
-        print("Usage: python emerald_parser.py <source-file>")
+    from ast_diagram import format_program_diagram
+
+    arguments = [a for a in sys.argv[1:] if a != "--diagram"]
+    diagram = len(arguments) != len(sys.argv) - 1
+    if len(arguments) != 1:
+        print("Usage: python emerald_parser.py <source-file> [--diagram]")
         sys.exit(1)
 
     try:
-        print(ast.format_tree(parse_file(sys.argv[1])))
+        program = parse_file(arguments[0])
+        print(format_program_diagram(program) if diagram else ast.format_tree(program))
     except FileNotFoundError:
-        print(f"Error: file {sys.argv[1]!r} was not found.")
+        print(f"Error: file {arguments[0]!r} was not found.")
         sys.exit(1)
     except (LexerError, ParseError) as error:
         print(error)

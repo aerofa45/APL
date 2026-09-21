@@ -23,7 +23,7 @@ Our group used AI to help implement the Emerald parser based on our Part 1 gramm
 
 **Which project components received AI assistance?**
 
-AI assisted with `emerald_parser.py`, `ast_nodes.py`, `test_parser.py`, `generate_outputs.py`, the example programs in `test_inputs/`, the saved outputs in `outputs/`, the README, `GRAMMAR.md` and the written report. The Part 2 lexer and token definitions were not changed.
+AI assisted with `emerald_parser.py`, `ast_nodes.py`, `ast_diagram.py`, `make_diagram_images.py`, `test_parser.py`, `generate_outputs.py`, the example programs in `test_inputs/`, the saved outputs in `outputs/`, the README, `GRAMMAR.md` and the written report. The Part 2 lexer and token definitions were not changed.
 
 **Describe at least one AI-generated suggestion, explanation, or code segment that your group modified, corrected, rejected, or improved.**
 
@@ -33,7 +33,7 @@ We also renamed the AI's first node classes (Program, Number, Identifier, Assign
 
 **How did your group test or independently verify AI-assisted work?**
 
-We ran the parser on ten example programs (six valid, four invalid) and checked the tree printed for each. The valid programs exit with status 0 and the invalid ones with status 1. Claude Code also ran 52 automated parser tests, which all passed, including checks that `2 + 3 * 4` builds the tree with `*` below `+` and that `let x = ;` is reported at line 1, column 9. We compared `lexer.py` and `token_definitions.py` with the Part 2 files and confirmed they are identical, and Part 2's 17 tests still pass. The parser's rules were also compared one by one with the Part 1 BNF/EBNF.
+We ran the parser on ten example programs (six valid, four invalid) and checked the tree printed for each. The valid programs exit with status 0 and the invalid ones with status 1. Claude Code also ran 62 automated parser tests, which all passed, including checks that `2 + 3 * 4` builds the tree with `*` below `+` and that `let x = ;` is reported at line 1, column 9. We compared `lexer.py` and `token_definitions.py` with the Part 2 files and confirmed they are identical, and Part 2's 17 tests still pass. The parser's rules were also compared one by one with the Part 1 BNF/EBNF.
 
 **What did your group learn from using AI during this milestone?**
 

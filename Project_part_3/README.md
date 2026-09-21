@@ -32,7 +32,30 @@ python emerald_parser.py test_inputs/test1_precedence.em
 ```
 
 Replace the filename with any Emerald source file. On success the AST is
-printed as an indented tree and the exit status is 0. Lexical and syntax
+printed as an indented tree and the exit status is 0.
+
+Add `--diagram` to draw each statement as a tree diagram instead:
+
+```sh
+python emerald_parser.py test_inputs/test1_precedence.em --diagram
+```
+
+The first statement of that file is `print(2 + 3 * 4);`, which prints:
+
+```
+Statement 1 (line 2):
+print
+  |
+  +
+ / \
+/   \
+2   *
+   / \
+   3 4
+```
+
+The `*` is below the `+`, so the multiplication is evaluated first. Very wide
+statements are shown as the indented tree instead, with a note. Lexical and syntax
 errors print a message with line and column and exit with status 1.
 
 Example error (`test_inputs/test7_invalid_missing_expression.em` contains
@@ -53,10 +76,12 @@ python -m unittest discover -v
 - emerald_parser.py: Recursive-descent parser and command-line entry point
 - ast_nodes.py: AST node classes and the tree printer
 - lexer.py, token_definitions.py: The Part 2 lexer, unchanged
-- test_parser.py: 52 automated tests (AST shape, precedence, errors, CLI)
+- ast_diagram.py: Draws the AST as a text diagram (the `--diagram` option)
+- test_parser.py: 62 automated tests (AST shape, precedence, errors, diagrams, CLI)
 - test_inputs/: Emerald programs (test1 to test6 are valid, test7 to test10 have syntax errors)
-- outputs/: Saved parser output for every test input
-- generate_outputs.py: Regenerates outputs/ by running the CLI on each input
+- outputs/: Saved output for every test input (`testN_output.txt` is the indented tree, `testN_diagram.txt` the diagram)
+- generate_outputs.py: Regenerates the text files in outputs/ by running the CLI on each input
+- make_diagram_images.py: Optional; draws PNG diagrams for the report (needs Pillow, everything else does not)
 - GRAMMAR.md: The grammar, the rule to node mapping, and parsing decisions
 - AI_USE_STATEMENT.md: How AI was used and how its output was checked
 - Project_Part_3_Report.docx: The written report

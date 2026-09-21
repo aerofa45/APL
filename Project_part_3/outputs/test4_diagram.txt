@@ -1,0 +1,44 @@
+Statement 1 (line 1):
+let total
+    |
+    0
+
+Statement 2 (line 2):
+               for
+  ______________|_______________
+  |     |     |                |
+let i   <     =               { }
+  |    / \   / \               |
+  0    i 5  /   \              if
+            i   +       _______|_______
+               / \      |             |
+               i 1     and           { }
+                       / \            |
+                      /   \           =
+                     /     \     _____|_____
+                     !=    <=    |         |
+                    / \   / \  total       +
+                    i 2   i 3             / \
+                                         /   \
+                                       total i
+
+Statement 3 (line 7):
+print
+  |
+total
+
+Statement 4 (line 9):
+let j
+  |
+  0
+
+Statement 5 (line 10):
+          for
+ __________|__________
+ |     |     |       |
+ =     >=    =      { }
+/ \   / \   / \      |
+j 10  j 0  /   \   print
+           j   -     |
+              / \    j
+              j 2

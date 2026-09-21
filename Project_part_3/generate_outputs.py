@@ -22,6 +22,15 @@ def main():
         (root / "outputs" / (path.stem.split("_")[0] + "_output.txt")).write_text(
             output, encoding="utf-8")
         print(f"{path.name}: expected exit {expected}; output saved")
+        if expected == 0:
+            diagram = subprocess.run(
+                [sys.executable, str(root / "emerald_parser.py"), str(path), "--diagram"],
+                capture_output=True, text=True)
+            if diagram.returncode != 0:
+                raise RuntimeError(f"Diagram failed for {path.name}: {diagram.stdout}{diagram.stderr}")
+            (root / "outputs" / (path.stem.split("_")[0] + "_diagram.txt")).write_text(
+                diagram.stdout, encoding="utf-8")
+            print(f"{path.name}: diagram saved")
 
 
 if __name__ == "__main__":
