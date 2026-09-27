@@ -1,2 +1,2 @@
-let result = (10 + 19) * 2 - 8 / 4;
-print(result);
+let total = (7 + 3) * 5 - 12 / 2;
+print(total);

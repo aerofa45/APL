@@ -87,7 +87,7 @@ class TestLexicalRules(unittest.TestCase):
         root = Path(__file__).resolve().parent
         cases = [([], 1, 'Usage:'), (['missing_file.em'], 1, 'was not found'),
                  (['test_inputs/test1_declaration.em'], 0, 'EOF'),
-                 (['test_inputs/test5_invalid.em'], 1, "column 12: invalid character '@'")]
+                 (['test_inputs/test5_invalid.em'], 1, "column 12: invalid character '#'")]
         for args, code, message in cases:
             with self.subTest(args=args):
                 result = subprocess.run([sys.executable, str(root / 'lexer.py'), *args],

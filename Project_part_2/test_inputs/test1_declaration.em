@@ -1,2 +1,2 @@
-let age = 21;
-let temperature = 98.6;
+let count = 15;
+let price = 4.99;

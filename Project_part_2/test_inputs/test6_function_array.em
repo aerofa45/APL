@@ -1,6 +1,5 @@
-func add(a, b) {
-    return a * b;
-}
-
-let scores = [90, 85, 100];
-scores[1] = add(scores[0], 10);
+func multiply(a, b) {
++     return a * b;
++ }
++ let grades = [70, 88, 95];
++ grades[2] = multiply(grades[0], 2);
