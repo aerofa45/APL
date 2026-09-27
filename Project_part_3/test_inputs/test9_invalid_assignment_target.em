@@ -1,3 +1,3 @@
-let x = 1;
-let y = 2;
-x + y = 3;
+let a = 1;
+let b = 2;
+a + b = 3;

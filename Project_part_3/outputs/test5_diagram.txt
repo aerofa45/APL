@@ -1,4 +1,4 @@
-Statement 1 (line 2):
+Statement 1 (line 3):
    func square(n)
          |
         { }
@@ -10,8 +10,8 @@ let result  return
    / \
    n n
 
-Statement 2 (line 7):
-func add(a, b)
+Statement 2 (line 8):
+func add(x, y)
       |
      { }
       |
@@ -19,9 +19,9 @@ func add(a, b)
       |
       +
      / \
-     a b
+     x y
 
-Statement 3 (line 11):
+Statement 3 (line 12):
  func hello()
       |
      { }
@@ -31,7 +31,7 @@ print   return
   |
   1
 
-Statement 4 (line 16):
+Statement 4 (line 17):
       let answer
           |
         add( )
@@ -41,12 +41,12 @@ square( )   square( )
     |           |
     3           4
 
-Statement 5 (line 17):
+Statement 5 (line 18):
   expr
    |
 hello( )
 
-Statement 6 (line 18):
+Statement 6 (line 19):
 print
   |
 answer

@@ -1,4 +1,4 @@
-let scores = [90, 85, 100];
+let scores = [80, 75, 100];
 let empty = [];
 scores[1] = 100;
 scores[scores[0] - 89] = scores[2] + 1.5;

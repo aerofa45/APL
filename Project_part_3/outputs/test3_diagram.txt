@@ -1,12 +1,12 @@
 Statement 1 (line 2):
 let a
   |
-  15
+  25
 
 Statement 2 (line 3):
 let b
   |
-  7
+  8
 
 Statement 3 (line 4):
        if

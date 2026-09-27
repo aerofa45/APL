@@ -1,11 +1,12 @@
 // Sample Program 4: parameters, return values, and scope
+
 func square(n) {
     let result = n * n;
     return result;
 }
 
-func add(a, b) {
-    return a + b;
+func add(x, y) {
+    return x + y;
 }
 
 func hello() {

@@ -1,10 +1,10 @@
 ProgramNode
   statements[0]: DeclarationNode name='x'
-    value: NumberNode value=10
-  statements[1]: DeclarationNode name='y'
     value: NumberNode value=20
+  statements[1]: DeclarationNode name='y'
+    value: NumberNode value=30
   statements[2]: DeclarationNode name='ratio'
-    value: NumberNode value=3.5
+    value: NumberNode value=4.5
   statements[3]: DeclarationNode name='sum'
     value: BinaryOpNode operator='*'
       left: BinaryOpNode operator='+'

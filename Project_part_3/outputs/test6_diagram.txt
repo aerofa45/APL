@@ -4,7 +4,7 @@ let scores
    [ ]
  ___|____
  |  |   |
- 90 85 100
+ 80 75 100
 
 Statement 2 (line 2):
 let empty

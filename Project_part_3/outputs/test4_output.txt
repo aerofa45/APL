@@ -6,7 +6,7 @@ ProgramNode
       value: NumberNode value=0
     condition: BinaryOpNode operator='<'
       left: VariableNode name='i'
-      right: NumberNode value=5
+      right: NumberNode value=6
     update: AssignmentNode
       target: VariableNode name='i'
       value: BinaryOpNode operator='+'

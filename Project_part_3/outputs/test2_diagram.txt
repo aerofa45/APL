@@ -1,17 +1,17 @@
 Statement 1 (line 2):
 let x
   |
-  10
+  20
 
 Statement 2 (line 3):
 let y
   |
-  20
+  30
 
 Statement 3 (line 4):
 let ratio
     |
-   3.5
+   4.5
 
 Statement 4 (line 5):
 let sum

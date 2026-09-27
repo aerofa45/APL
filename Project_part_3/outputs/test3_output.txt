@@ -1,8 +1,8 @@
 ProgramNode
   statements[0]: DeclarationNode name='a'
-    value: NumberNode value=15
+    value: NumberNode value=25
   statements[1]: DeclarationNode name='b'
-    value: NumberNode value=7
+    value: NumberNode value=8
   statements[2]: IfNode
     condition: BinaryOpNode operator='>'
       left: VariableNode name='a'

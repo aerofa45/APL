@@ -1,4 +1,4 @@
-func f(a) {
-    if (a > 1) {
-        return a;
+func f(x) {
+    if (x > 1) {
+        return x;
     }

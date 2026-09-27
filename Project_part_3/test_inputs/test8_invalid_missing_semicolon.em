@@ -1,3 +1,3 @@
-let x = 10;
-let y = x + 2
-print(y);
+let a = 10;
+let b = a + 2
+print(b);

@@ -7,12 +7,12 @@ ProgramNode
           right: VariableNode name='n'
       statements[1]: ReturnNode
         value: VariableNode name='result'
-  statements[1]: FunctionNode name='add' parameters=['a', 'b']
+  statements[1]: FunctionNode name='add' parameters=['x', 'y']
     body: BlockNode
       statements[0]: ReturnNode
         value: BinaryOpNode operator='+'
-          left: VariableNode name='a'
-          right: VariableNode name='b'
+          left: VariableNode name='x'
+          right: VariableNode name='y'
   statements[2]: FunctionNode name='hello' parameters=[]
     body: BlockNode
       statements[0]: PrintNode

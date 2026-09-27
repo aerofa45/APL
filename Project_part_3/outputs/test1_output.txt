@@ -3,11 +3,11 @@ ProgramNode
     value: BinaryOpNode operator='+'
       left: NumberNode value=2
       right: BinaryOpNode operator='*'
-        left: NumberNode value=3
+        left: NumberNode value=5
         right: NumberNode value=4
   statements[1]: PrintNode
     value: BinaryOpNode operator='*'
       left: BinaryOpNode operator='+'
         left: NumberNode value=2
-        right: NumberNode value=3
+        right: NumberNode value=1
       right: NumberNode value=4

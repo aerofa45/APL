@@ -9,7 +9,7 @@ Statement 2 (line 2):
   |     |     |                |
 let i   <     =               { }
   |    / \   / \               |
-  0    i 5  /   \              if
+  0    i 6  /   \              if
             i   +       _______|_______
                / \      |             |
                i 1     and           { }

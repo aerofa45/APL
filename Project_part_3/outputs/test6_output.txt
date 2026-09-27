@@ -1,8 +1,8 @@
 ProgramNode
   statements[0]: DeclarationNode name='scores'
     value: ArrayNode
-      elements[0]: NumberNode value=90
-      elements[1]: NumberNode value=85
+      elements[0]: NumberNode value=80
+      elements[1]: NumberNode value=75
       elements[2]: NumberNode value=100
   statements[1]: DeclarationNode name='empty'
     value: ArrayNode elements=[]

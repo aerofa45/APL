@@ -1,5 +1,5 @@
 let total = 0;
-for (let i = 0; i < 5; i = i + 1) {
+for (let i = 0; i < 6; i = i + 1) {
     if (i != 2 and i <= 3) {
         total = total + i;
     }

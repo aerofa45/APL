@@ -1,6 +1,6 @@
 // Sample Programs 2 and 3: if/else and while
-let a = 15;
-let b = 7;
+let a = 25;
+let b = 8;
 if (a > b) {
     print(a);
 } else {
