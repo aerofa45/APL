@@ -14,14 +14,14 @@ types, or check array bounds.
 ## Relationship to Parts 1 and 2
 
 - The grammar is the Part 1 BNF/EBNF, unchanged (see GRAMMAR.md).
-- `lexer.py` and `token_definitions.py` are the Part 2 files, copied without
-  changes so that this folder runs on its own. Part 2's own 17 tests still pass.
+- `lexer.py` and `token_definitions.py` are the Part 2 files, copied without changes so that this folder runs on its own. (Part 2's own 17 tests aren't included in this folder, but pass unchanged against these same files in the Part 2 submission.)
 - Nothing in Part 1 or Part 2 was modified.
 
 ## Requirements
 
 - Python 3.10 or later
-- No external packages are required
+- No external packages are required to run the parser or the tests
+- The optional `make_diagram_images.py` script needs Pillow 
 
 ## Running the Parser
 
