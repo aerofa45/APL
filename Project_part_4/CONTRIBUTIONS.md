@@ -4,7 +4,6 @@ Aman:
 Updated and created these files
 AI_USE_STATEMENT.md
 ARCHITECTURE.md
-
 Created interpreter.py
 
 Components like Function, ReturnSignal, format_value(). etc were added.
@@ -34,3 +33,8 @@ AI_USE_STATEMENT.md
 Readme.md
 GRAMMER.md
 Test Case for error programs ( Folder error programs-> Screenshots stored in this folder)
+
+Toufique:
+
+Reviewed Architecture.md and instruction logical steps in README.md
+Suggested AI USE for efficient workflow
