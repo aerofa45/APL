@@ -21,6 +21,12 @@ Created and Updated these files and ran test cases for them:
 02_arithmetic.em
 01_variables.em
 
+Md Shohag Ali Sader:
+
+1. Created env.py file
+2. Tested test_interpreter.py and verify_examples.py to get updated test results
+3. Ran and tested project part2 and part 3
+
 Abir:
 Abir:
 Created these files :
