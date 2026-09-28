@@ -27,14 +27,14 @@ Md Shohag Ali Sader:
 3. Ran and tested project part2 and part 3
 
 Abir:
-Abir:
+
 Created these files :
 AI_USE_STATEMENT.md
 Readme.md
 GRAMMER.md
 Test Case for error programs ( Folder error programs-> Screenshots stored in this folder)
 
-Toufique:
+Toufique Hasan:
 
-Reviewed Architecture.md and instruction logical steps in README.md
-Suggested AI USE for efficient workflow
+1. Reviewed ARCHITECTURE.md and documentation
+2. Reviewed testing instructions and README.md
