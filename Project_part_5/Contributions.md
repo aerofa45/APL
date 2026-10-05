@@ -1,6 +1,6 @@
 Abir:
 
-- Reviewed how the new keywords become tokens and AST nodes. Verified semicolons and source locations.
+- Reviewed how the new keywords became tokens and AST nodes. Verified semicolons and source locations.
 
 Prashant:
 - Added changes to interpreter.py, environment.py, ARCHITECTURE.md
