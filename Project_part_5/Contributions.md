@@ -18,7 +18,8 @@ Aman:
 Md Shohag Ali Sarder:
 
 - Verified break/continue, nested loops, errors, and final package instructions.
-- Added test_extension.py, programs 14–16, their matching outputs, verify_examples.py, README.md and TEST_RESULTS.md
+- Added test_extension.py, programs 14–16, their matching outputs, verify_examples.py, and README.md
+- Added TEST_RESULTS.md and ran the test cases
 - Added verified test screenshots
 
 Toufique Hasan:
