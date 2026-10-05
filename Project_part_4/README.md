@@ -87,6 +87,4 @@ not in the inherited language grammar. Pass an array's count explicitly.
 | AI use | AI_USE_STATEMENT.md with correction and regression evidence |
 | GitHub/individual work | CONTRIBUTIONS.md; actual commits and member review required |
 
-Passing automated tests is evidence of implemented behavior, not a guarantee of
-every possible input. Each student must review the code, confirm course AI rules,
-and record only contributions they actually made.
+
