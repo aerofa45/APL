@@ -17,7 +17,7 @@ Claude Code (Claude Sonnet 5), running in VS Code.
 
 **How did your group use AI for this project milestone?**
 
-Our group used AI to help implement the Emerald parser based on our Part 1 grammar and the Part 2 lexer. AI helped generate and explain Python code, design the AST node classes, suggest test cases, and prepare documentation and running instructions.
+Our group used AI to help implement the Emerald parser based on our Part 1 grammar and the Part 2 lexer. AI helped outline code structure for our project and helped documentation formatting and provided AI assiatnce in some of the logical structures in parser.
 
 **Which project components received AI assistance?**
 
