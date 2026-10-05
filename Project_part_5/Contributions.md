@@ -20,3 +20,8 @@ Md Shohag Ali Sarder:
 - Verified break/continue, nested loops, errors, and final package instructions.
 - Added test_extension.py, programs 14–16, their matching outputs, verify_examples.py, README.md and TEST_RESULTS.md
 - Added verified test screenshots
+
+Toufique Hasan:
+
+- Verified AI_USE_STATEMENT.md against interpreter.py and the tests it names.
+- Reviewed the loop-depth logic in interpreter.py and ran the unit tests and example programs.
