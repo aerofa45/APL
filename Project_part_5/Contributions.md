@@ -1,7 +1,7 @@
 Abir:
 
 - Reviewed how the new keywords become tokens and AST nodes. Verified semicolons and source locations.
-- Add code extension on these files - token_definitions.py, lexer.py, ast_nodes.py, emerald_parser.py, GRAMMAR.md
+- Add code extension on these files - token_definitions.py, lexer.py, ast_nodes.py, emerald_parser.py, ast_diagram.py GRAMMAR.md
 
 Prashant:
 
