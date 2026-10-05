@@ -14,3 +14,8 @@ Aman:
 - Added corresponding expected and captured actual output files.
 - Inherited the test_interpreter.py suite into part 5.
 - Committed these files on the Aman branch and merged into master.
+
+Toufique Hasan:
+
+- Verified AI_USE_STATEMENT.md against interpreter.py and the tests it names.
+- Reviewed the loop-depth logic in interpreter.py and ran the unit tests and example programs.
