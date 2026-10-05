@@ -20,4 +20,4 @@ interpreter.py: function execution, values, returns, loops, and extension. envir
 09: definitions, two parameters, call, return, local sum. 10: required global/local shadowing example (20 then 10). 11: independent call locals. 12: lexical scope rather than caller scope. 13: recursive factorial. 14: for loop with continue and return. 15: while loop with break. 16: nearest-loop break in nested loops. 17: array parameter and for-loop accumulation. The automated negative tests also demonstrate that locals cannot escape a call.
 
 ## Limits
-No strings, user input, length builtin, direct else if, or chained indexing. Conditions must be booleans, booleans are not numeric operands. Errors include source locations and stop execution. A default 100,000 AST-visit budget limits accidental infinite loops. This is not a security sandbox.
+No strings, user input, length builtin, direct else if, or chained indexing. Conditions must be booleans, booleans are not numeric operands. Errors include source locations and stop execution. A default 100,000 AST-visit budget limits accidental infinite loops.
