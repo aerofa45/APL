@@ -1,8 +1,3 @@
-"""AST node definitions for Emerald.
-
-Every node records the line and column of the token that starts it. Those
-positions are excluded from equality so tests can compare tree shapes only.
-"""
 from dataclasses import dataclass, field, fields
 from typing import Optional, Union
 
