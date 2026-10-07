@@ -83,8 +83,4 @@ The default execution budget is 100,000 AST visits, not a security sandbox.
 python main.py tests/programs/05_while.em --max-steps 1000000
 ~~~
 
-## Provenance and submission
-Based on aerofa45/APL master e9d88b38fd1d3d5ec3861cd7a436038d6803116b.
-GitHub: https://github.com/aerofa45/APL
-The separate 4-6 page report and all-member 10-15 minute recording remain to be
-completed. Include AI use in the report and check video-link access privately.
+
