@@ -33,6 +33,4 @@ Toufique Hasan:
 - Verified AI_USE_STATEMENT.md against interpreter.py and the tests it names.
 - Reviewed the loop-depth logic in interpreter.py and ran the unit tests and example programs.
 
-## Part 6 package preparation
 
-At the user request, Codex repaired diagram labels, integrated emerald_parser.py/main.py, reorganized tests, added regression and lexical/syntax/precedence cases, updated documentation and verified the package. These actions are not attributed to a student. Members should add only their actual subsequent review, changes, verification and recording participation.
