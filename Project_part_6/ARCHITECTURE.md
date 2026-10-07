@@ -59,4 +59,4 @@ Tests: programs 09–17, test_extension.py, inherited test_interpreter.py.
 Grammar: full GRAMMAR.md with break/continue productions and execution rules.
 
 ## Final integration
-main.py delegates to interpreter.main. parser.py is the integrated parser module. Tests and complete examples live in tests/. verify_examples.py checks source/expected-file correspondence, exact streams, and exit codes. ast_diagram.py labels BreakNode and ContinueNode; integration tests protect the repaired diagram path.
+main.py delegates to interpreter.main. emerald_parser.py is the integrated parser module. Tests and complete examples live in tests/. verify_examples.py checks source/expected-file correspondence, exact streams, and exit codes. ast_diagram.py labels BreakNode and ContinueNode; integration tests protect the repaired diagram path.

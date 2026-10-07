@@ -4,7 +4,7 @@ Emerald is an educational programming language implemented in Python.
 Requires Python 3.10+. No external packages are needed to run or test it.
 
 ## Quick start
-Extract the ZIP and open a terminal inside YourLanguage.
+Extract the ZIP and open a terminal inside Project_part_6.
 ~~~bash
 python main.py tests/programs/09_function_add.em
 python -m unittest discover -v
@@ -16,8 +16,8 @@ five intentional error programs. Run tests from the project root.
 ## Demonstrate the pipeline
 ~~~bash
 python lexer.py tests/programs/18_precedence.em
-python parser.py tests/programs/18_precedence.em
-python parser.py tests/programs/18_precedence.em --diagram
+python emerald_parser.py tests/programs/18_precedence.em
+python emerald_parser.py tests/programs/18_precedence.em --diagram
 python main.py tests/programs/18_precedence.em
 ~~~
 Execution prints 14 then 20. The AST groups multiplication inside addition.
@@ -66,7 +66,7 @@ error. Earlier runtime output is retained; syntax errors prevent execution.
 ## Files
 - main.py: primary entry point.
 - lexer.py, token_definitions.py: source to positioned tokens.
-- parser.py: recursive-descent parser.
+- emerald_parser.py: recursive-descent parser.
 - ast_nodes.py, ast_diagram.py: AST definitions and diagrams.
 - interpreter.py: statement execution and expression evaluation.
 - environment.py: linked dictionaries and runtime error type.

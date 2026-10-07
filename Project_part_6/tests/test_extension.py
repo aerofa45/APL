@@ -2,7 +2,7 @@ import io
 import unittest
 from interpreter import Interpreter
 from environment import EmeraldRuntimeError
-from parser import parse_source, ParseError
+from emerald_parser import parse_source, ParseError
 from lexer import Lexer
 from token_definitions import TokenType
 from ast_nodes import BreakNode, ContinueNode

@@ -5,7 +5,7 @@ import math
 import sys
 
 import ast_nodes as ast
-from parser import parse_source, ParseError
+from emerald_parser import parse_source, ParseError
 from lexer import LexerError
 from environment import Environment, EmeraldRuntimeError
 

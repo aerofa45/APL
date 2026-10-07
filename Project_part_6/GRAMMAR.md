@@ -113,7 +113,7 @@ grammar from Part 1, so the parser accepts every program that Part 1 defines.
 From lowest to highest: `or`, `and`, `== !=`, `< > <= >=`, `+ -`, `* /`,
 unary `- not`. Parentheses, function calls and array indexing bind tightest.
 Every binary level is left-associative. Each nonterminal is one method in
-`parser.py`, and the six binary levels share one `binary_level`
+`emerald_parser.py`, and the six binary levels share one `binary_level`
 helper. Precedence comes from the order of the methods: an operator that
 binds tighter is parsed by a method called from deeper in the chain.
 

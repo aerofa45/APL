@@ -3,7 +3,7 @@ from pathlib import Path
 import subprocess
 import sys
 import unittest
-from parser import parse_source
+from emerald_parser import parse_source
 from ast_diagram import format_program_diagram
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -22,7 +22,7 @@ class FinalIntegrationTests(unittest.TestCase):
     def test_diagram_cli_on_extension_programs(self):
         for name in ("14_for_continue", "15_while_break", "16_nested_loops"):
             with self.subTest(name=name):
-                r = self.cli("parser.py", f"tests/programs/{name}.em", "--diagram")
+                r = self.cli("emerald_parser.py", f"tests/programs/{name}.em", "--diagram")
                 self.assertEqual(r.returncode, 0, r.stderr)
                 self.assertEqual(r.stderr, "")
                 self.assertIn("Statement", r.stdout)

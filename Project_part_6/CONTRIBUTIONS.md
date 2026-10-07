@@ -33,4 +33,4 @@ Toufique Hasan:
 
 ## Part 6 package preparation
 
-At the user request, Codex repaired diagram labels, integrated parser.py/main.py, reorganized tests, added regression and lexical/syntax/precedence cases, updated documentation and verified the package. These actions are not attributed to a student. Members should add only their actual subsequent review, changes, verification and recording participation.
+At the user request, Codex repaired diagram labels, integrated emerald_parser.py/main.py, reorganized tests, added regression and lexical/syntax/precedence cases, updated documentation and verified the package. These actions are not attributed to a student. Members should add only their actual subsequent review, changes, verification and recording participation.
