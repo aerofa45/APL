@@ -1,0 +1,1 @@
+func first(){let i=0; while(true){i=i+1; if(i==3){break;}} return i;} print(first());
