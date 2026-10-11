@@ -1,0 +1,43 @@
+test_continue_while (tests.test_extension.ExtensionTests.test_continue_while) ... ok
+test_controls_outside_loop (tests.test_extension.ExtensionTests.test_controls_outside_loop) ... ok
+test_error_restores_context (tests.test_extension.ExtensionTests.test_error_restores_context) ... ok
+test_function_cannot_control_caller_loop (tests.test_extension.ExtensionTests.test_function_cannot_control_caller_loop) ... ok
+test_local_variables_do_not_escape (tests.test_extension.ExtensionTests.test_local_variables_do_not_escape) ... ok
+test_nested_continue (tests.test_extension.ExtensionTests.test_nested_continue) ... ok
+test_return_restores_loop_context (tests.test_extension.ExtensionTests.test_return_restores_loop_context) ... ok
+test_semicolon_required (tests.test_extension.ExtensionTests.test_semicolon_required) ... ok
+test_tokens_and_ast_positions (tests.test_extension.ExtensionTests.test_tokens_and_ast_positions) ... ok
+test_break_diagram (tests.test_integration.FinalIntegrationTests.test_break_diagram) ... ok
+test_continue_diagram (tests.test_integration.FinalIntegrationTests.test_continue_diagram) ... ok
+test_diagram_cli_on_extension_programs (tests.test_integration.FinalIntegrationTests.test_diagram_cli_on_extension_programs) ... ok
+test_error_stages_and_locations (tests.test_integration.FinalIntegrationTests.test_error_stages_and_locations) ... ok
+test_main_entry_point (tests.test_integration.FinalIntegrationTests.test_main_entry_point) ... ok
+test_main_usage (tests.test_integration.FinalIntegrationTests.test_main_usage) ... ok
+test_precedence_ast (tests.test_integration.FinalIntegrationTests.test_precedence_ast) ... ok
+test_precedence_outputs (tests.test_integration.FinalIntegrationTests.test_precedence_outputs) ... ok
+test_all_comparisons (tests.test_interpreter.InterpreterTests.test_all_comparisons) ... ok
+test_arithmetic_and_assignment (tests.test_interpreter.InterpreterTests.test_arithmetic_and_assignment) ... ok
+test_array_read_write_alias (tests.test_interpreter.InterpreterTests.test_array_read_write_alias) ... ok
+test_bare_and_implicit_return (tests.test_interpreter.InterpreterTests.test_bare_and_implicit_return) ... ok
+test_block_variable_does_not_escape (tests.test_interpreter.InterpreterTests.test_block_variable_does_not_escape) ... ok
+test_cli_failures (tests.test_interpreter.InterpreterTests.test_cli_failures) ... ok
+test_closure_and_return_from_loop (tests.test_interpreter.InterpreterTests.test_closure_and_return_from_loop) ... ok
+test_complete_programs (tests.test_interpreter.InterpreterTests.test_complete_programs) ... ok
+test_cyclic_array_print (tests.test_interpreter.InterpreterTests.test_cyclic_array_print) ... ok
+test_error_location (tests.test_interpreter.InterpreterTests.test_error_location) ... ok
+test_execution_limit (tests.test_interpreter.InterpreterTests.test_execution_limit) ... ok
+test_for_loop_scope (tests.test_interpreter.InterpreterTests.test_for_loop_scope) ... ok
+test_fresh_loop_body_scope (tests.test_interpreter.InterpreterTests.test_fresh_loop_body_scope) ... ok
+test_if_else_and_no_else (tests.test_interpreter.InterpreterTests.test_if_else_and_no_else) ... ok
+test_lexical_scope_not_caller_scope (tests.test_interpreter.InterpreterTests.test_lexical_scope_not_caller_scope) ... ok
+test_recursive_function (tests.test_interpreter.InterpreterTests.test_recursive_function) ... ok
+test_recursive_limit_is_language_error (tests.test_interpreter.InterpreterTests.test_recursive_limit_is_language_error) ... ok
+test_runtime_error_cases (tests.test_interpreter.InterpreterTests.test_runtime_error_cases) ... ok
+test_scope_shadowing_and_outer_assignment (tests.test_interpreter.InterpreterTests.test_scope_shadowing_and_outer_assignment) ... ok
+test_short_circuit_and_unary (tests.test_interpreter.InterpreterTests.test_short_circuit_and_unary) ... ok
+test_while_and_zero_iterations (tests.test_interpreter.InterpreterTests.test_while_and_zero_iterations) ... ok
+
+----------------------------------------------------------------------
+Ran 38 tests in 0.799s
+
+OK
